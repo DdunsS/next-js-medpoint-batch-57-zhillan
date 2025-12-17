@@ -17,7 +17,7 @@ jobs:
         run: |
           git config --global url."https://${{ secrets.GITEA_TOKEN }}@gitea.sev-2.com/".insteadOf "ssh://gitea.sev-2.com/"
 
-      - run: yarn install --frozen-lockfile
+      - run: yarn install 
       - run: yarn build
 
       - name: Deploy to Vercel
