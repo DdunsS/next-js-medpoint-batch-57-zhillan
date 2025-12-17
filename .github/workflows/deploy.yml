@@ -13,6 +13,10 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Configure Gitea access
+        run: |
+          git config --global url."https://${{ secrets.GITEA_TOKEN }}@gitea.sev-2.com/".insteadOf "ssh://gitea.sev-2.com/"
+
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
