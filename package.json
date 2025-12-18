@@ -27,7 +27,7 @@
     "@supabase/supabase-js": "^2.47.12",
     "axios": "^1.7.9",
     "jekoneng-web-ui": "git+ssh://gitea.sev-2.com/refactory/jekoneng-web-ui#main",
-    "next": "15.1.4",
+    "next": "^16.0.10",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
